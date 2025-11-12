@@ -1,9 +1,9 @@
-##🧾 Employee Registration Form
+## 🧾 Employee Registration Form
 ---
 A simple and beautifully designed Employee Registration Form built using HTML and CSS.
 This form collects basic employee details like name, contact information, address, education, and more — styled with a clean, modern layout and smooth UI.
 
-##Features
+## Features
 ---
 - Modern and responsive design (works on mobile and desktop)
 
