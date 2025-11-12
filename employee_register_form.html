@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Registration Form</title>
+    <link rel="stylesheet" href="./employee_registration.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <h1>Employee Registration Form</h1>
+      <div class="form-date">
+        <table>
+          <tr>
+            <td class="table-content">
+              <label for="name">Enter First Name</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your First Name"
+              />
+              <span>(Max 30 character required)</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="lname">Enter Last Name</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Your Last Name"
+              />
+              <span>(Max 30 character required)</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="date">Date Of Birth</label>
+            </td>
+            <td>
+              <select id="data">
+                <option value="">Select Date</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+
+              <select id="data">
+                <option value="">Select Month</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+
+              <select id="data">
+                <option value="">Select Year</option>
+                <option value="">2001</option>
+                <option value="">2002</option>
+                <option value="">2003</option>
+                <option value="">2004</option>
+                <option value="">2005</option>
+                <option value="">2006</option>
+                <option value="">2007</option>
+                <option value="">2008</option>
+                <option value="">2009</option>
+                <option value="">2010</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="email">Enter Email</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your Email Address"
+              />
+              <span>(Write correct email address)</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="mob">Enter Mobile Number</label>
+            </td>
+            <td>
+              <input type="number" id="mob" name="mob" />
+              <span>(Enter 10 digit number required)</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="gender">Gender</label>
+            </td>
+            <td>
+              Male <input type="radio" id="male" name="gender" /> Female
+              <input type="radio" id="female" name="gender" />
+              Other <input type="radio" id="other" name="gender" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="address">Enter Address</label>
+            </td>
+            <td>
+              <textarea rows="3" id="address"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="city">Enter City</label>
+            </td>
+            <td>
+              <input type="text" id="city" name="city" />
+              <span>(Max 30 character required)</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="pin">Pin Code</label>
+            </td>
+            <td>
+              <input type="number" id="pin" name="pin" />
+              <span>(Enter 9 digit pin code)</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="state">State</label>
+            </td>
+            <td>
+              <input type="text" id="state" name="state" />
+              <span>(Max 30 character required)</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="country">Enter Country</label>
+            </td>
+            <td>
+              <input type="text" id="country" name="country" />
+              <span>(Max 30 character required)</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="hobby">Hobbies</label>
+            </td>
+            <td>
+              Drawing
+              <input type="checkbox" name="hobby" value="drawing" /> Singing
+              <input type="checkbox" name="hobby" value="singing" /> Dancing
+              <input type="checkbox" name="hobby" value="dancing" /> Sketching
+              <input type="checkbox" name="hobby" value="sketching" />
+
+              <div class="other-hobby">
+                Other <input type="checkbox" name="hobby" value="other" />
+                <textarea
+                  rows="1"
+                  id="other-hobby"
+                  class="category"
+                  placeholder="Specify your hobby"
+                ></textarea>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="education">Qualification</label>
+            </td>
+            <td>
+              <table class="nested">
+                <tr>
+                  <th>sr.no</th>
+                  <th>Examination</th>
+                  <th>Board</th>
+                  <th>Percentage</th>
+                  <th>Year Passing</th>
+                </tr>
+
+                <tr>
+                  <td>1</td>
+                  <td>Class X</td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td>Class XI</td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+                  <td>Class XII</td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+                  <td>Graduation</td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+                  <td>Master</td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-content">
+              <label for="course">Courses Applied for</label>
+            </td>
+            <td>
+              BCA <input type="radio" id="bca" name="course" /> B.Com
+              <input type="radio" id="bcom" name="course" />
+              B.Tech <input type="radio" id="btech" name="course" /> B.Sc
+              <input type="radio" id="bsc" name="course" />
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>
+              <button class="submit">
+                <i class="fa-solid fa-user-plus fa-shake"></i> Submit
+              </button>
+              <button class="reset">
+                <i class="fa-solid fa-trash fa-shake"></i> Reset
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

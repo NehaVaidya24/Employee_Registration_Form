@@ -1,0 +1,163 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.box {
+  width: 90%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 30px 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.box h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 12px 10px;
+  vertical-align: top;
+}
+
+.table-content {
+  text-align: right;
+  font-weight: 500;
+  color: #333;
+  width: 35%;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 90%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #74b9ff;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(116, 185, 255, 0.5);
+}
+
+span {
+  color: #888;
+  font-size: 13px;
+  display: block;
+  margin-top: 3px;
+}
+
+textarea {
+  resize: none;
+}
+
+.nested {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fefefe;
+}
+
+.nested th {
+  background: #74b9ff;
+  color: #fff;
+  padding: 8px;
+}
+
+.nested td {
+  text-align: center;
+  padding: 8px;
+  border-top: 1px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit {
+  width: 40%;
+  padding: 10px 0;
+  background: #00b894;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.submit:hover {
+  background: #019870;
+  transform: scale(1.05);
+}
+
+.reset {
+  width: 40%;
+  padding: 10px 0;
+  background: #d63031;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.reset:hover {
+  background: #b22c2d;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .table-content {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  .box {
+    padding: 20px;
+  }
+}
